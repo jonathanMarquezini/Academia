@@ -1,0 +1,435 @@
+@import url(../fonts/font.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* aba/menu */
+
+.corpo {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+header {
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header .center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .center h3{
+    margin-top: 2%;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.9s;
+    cursor: pointer;
+}
+header .center i:hover{
+    color: rgba(255, 0, 0, 0.658);
+}
+header .center h3:hover{
+    color: rgba(255, 0, 0, 0.658);
+}
+header .center .menu a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: 0.9s;
+    line-height: 45px;
+    padding: 0px 10px;
+}
+header .center .menu a:hover {
+    color: rgba(255, 0, 0, 0.658);
+}
+.corpo .texto{
+    color: white;
+    position: absolute;
+    bottom: 50%;
+    right: 15%;
+}
+.corpo .texto h4 {
+    margin-left: 152px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 1.7em;
+}
+.corpo .texto p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+/* Fim aba/menu*/
+
+/* Aulas */
+
+.aulas {
+    width: 100%;
+    height: 600px;
+    padding-top: 3%;
+    background-color: black;
+}
+.aulas .colunas {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+    column-gap: 350px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.aulas .colunas .row1 h4 {
+    padding-bottom: 20px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 2em;   
+}
+.aulas .colunas .row2 h4 {
+    padding-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 2em;   
+    color: white;
+}
+/* row1 */
+.aulas .colunas .row1 h4:hover {
+    transition: 0.7s;
+    color: rgba(255, 0, 0, 0.658);
+}
+
+/* row2 */
+.aulas .colunas .row2 h4:hover {
+    transition: 0.7s;
+    color: rgba(255, 0, 0, 0.658);
+}
+/* Fim das aulas */
+
+/* Imagens */
+
+.aulas .imagensGeral {
+    width: 100%;
+}
+.aulas .imagensGeral .imgG {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.5%;
+}
+
+.aulas .imagensGeral .imgG img {
+    width: 235px;
+    height: 170px;
+    margin-right: 15px;
+    border: 1px solid white;
+}
+
+/* Fim de imagens */
+
+/* Parte dos icones */
+
+.icones {
+    width: 100%;
+    height: 90vh;
+    padding-top: 7%;
+}
+.icones .colunas-icons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+    column-gap: 350px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icones .colunas-icons .icons1 i {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
+.icones .colunas-icons .icons1 p {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+/* fim de icones */
+
+/* agendamento */
+
+.agenda {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+}
+.agenda h1 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding-top: 3%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+}
+.agenda .btn-agenda {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.agenda .btn-agenda button {
+    margin-top: 3%;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(204, 17, 17);
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.agenda .btn-agenda button:hover {
+    background-color: rgb(223, 39, 39);
+}
+
+/* Fim do agendamento */
+
+/* Local */
+
+.local {
+    width: 100%;
+    height: 150vh;
+}
+
+.local .row-local {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.local .row-local .local1 h3 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+}
+
+.local .row-local .local1 img {
+    width: 400px;
+    height: 310px;
+}
+
+.local .row-local .local1 p {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 1.4em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+}
+
+.local .row-local .local2 h3 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+}
+
+.local .row-local .local2 img {
+    width: 400px;
+    height: 310px;
+}
+
+.local .row-local .local2 p {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 1.4em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+}
+
+/* mapa */
+
+.maps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps iframe {
+    margin-top: 3.5%;
+    width: 700px;
+    height: 300px;
+}
+
+/* fim do mapa/
+
+/* Fim do Local */
+
+/* Contato */
+
+form {
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+}
+
+form .form-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .form-label .contato {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 2.3em; 
+    color: white;
+    margin-top: 2%;
+}
+
+form .form-label input {
+    width: 600px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-indent: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 1em;   
+}
+
+form .teste {
+    margin-left: 380px;
+}
+
+form .teste h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 1.5em; 
+    color: white;
+}
+
+form select {
+    margin-top: 5px;
+    margin-left: 380px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+    width: 200px;
+    cursor: pointer;
+}
+
+form select option {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-weight: normal;
+    color: white;
+    background-color: black;
+}
+
+form .textArea {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+form .textArea textarea {
+    width: 600px;
+    height: 120px;
+    border-radius: 15px;
+    text-indent: 10px;
+}
+
+form .btn-enviar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+form .btn-enviar button {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 1.1em;
+}
+form .btn-enviar button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Fim do contato */
+
+/* Whatsapp */
+
+.whats {
+    display: flex;
+    background: fixed;
+}
+
+.whats i {
+    position: fixed;
+    right: 30px;
+    bottom: 150px;
+    
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(17, 199, 17);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.whats i:hover {
+    background-color: rgb(0, 128, 0);
+    color: white;
+    cursor: pointer;
+}
+
+/* Fim do whatsapp */
